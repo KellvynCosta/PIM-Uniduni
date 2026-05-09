@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Admin - Uniduni</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+
+            <a href="../index.html" class="logo-texto">
+                Uniduni
+            </a>
+
+            <div id="areaUsuario"></div>
+
+        </div>
+    </header>
+
+    <main class="admin-container">
+
+        <section class="admin-header">
+            <h1>Painel Administrativo</h1>
+            <p>Gerencie os produtos e usuários do sistema.</p>
+        </section>
+
+        <section class="admin-cards">
+
+            <div class="admin-card">
+                <h2>Produtos</h2>
+                <p>Cadastre, edite e exclua produtos do catálogo.</p>
+
+                <button id="btnGerenciarProdutos">
+                    Gerenciar Produtos
+                </button>
+            </div>
+
+            <div class="admin-card">
+                <h2>Usuários</h2>
+                <p>Visualize, edite e exclua usuários cadastrados.</p>
+
+                <button id="btnGerenciarUsuarios">
+                    Gerenciar Usuários
+                </button>
+            </div>
+
+        </section>
+
+        <section id="areaAdminConteudo" class="admin-content">
+            <p>Selecione uma opção acima para começar.</p>
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+</body>
+</html>

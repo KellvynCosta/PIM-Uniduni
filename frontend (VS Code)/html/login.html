@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Uniduni</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <main class="auth-container">
+        <section class="auth-card">
+            <h1>Login</h1>
+            <p>Entre na sua conta Uniduni</p>
+
+            <form id="formLogin">
+                <div class="form-group">
+                    <label for="emailLogin">E-mail</label>
+                    <input type="email" id="emailLogin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="senhaLogin">Senha</label>
+                    <input type="password" id="senhaLogin" required>
+                </div>
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <p id="mensagemLogin"></p>
+
+            <p class="auth-link">
+                <button type="button" id="btnMostrarRedefinir" class="link-button">
+                    Esqueci minha senha
+                </button>
+            </p>
+
+            <form id="formRedefinirSenha" class="form-redefinir hidden">
+                <h2>Redefinir senha</h2>
+                <p>Informe seu e-mail e escolha uma nova senha.</p>
+
+                <div class="form-group">
+                    <label for="emailRedefinir">E-mail</label>
+                    <input type="email" id="emailRedefinir">
+                </div>
+
+                <div class="form-group">
+                    <label for="novaSenha">Nova senha</label>
+                    <input type="password" id="novaSenha">
+                </div>
+
+                <button type="submit">Redefinir senha</button>
+
+                <p id="mensagemRedefinir"></p>
+            </form>
+
+            <p class="auth-link">
+                Ainda não tem conta?
+                <a href="cadastro.html">Cadastrar</a>
+            </p>
+
+            <a class="voltar-home" href="../index.html">
+                Voltar para a página inicial
+            </a>
+        </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+</body>
+</html>

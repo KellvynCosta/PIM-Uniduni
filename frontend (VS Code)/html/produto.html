@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto - Uniduni</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+
+            <a href="../index.html" class="logo-texto">
+                Uniduni
+            </a>
+
+            <div id="areaUsuario"></div>
+
+        </div>
+    </header>
+
+    <main class="produto-container">
+
+        <section class="produto-detalhe">
+
+            <div class="produto-imagem">
+                <img id="imagemProduto" src="../images/produto-padrao.jpg" alt="Imagem do produto">
+            </div>
+
+            <div class="produto-info">
+                <h2 id="nomeProduto">Nome do produto</h2>
+
+                <p id="descricaoProduto">
+                    Descrição do produto
+                </p>
+
+                <p id="precoProduto" class="produto-preco">
+                    R$ 0,00
+                </p>
+
+                <div class="produto-extra">
+                    <p>
+                        <strong>Tamanho:</strong>
+                        <span id="tamanhoProduto"></span>
+                    </p>
+
+                    <p>
+                        <strong>Gênero:</strong>
+                        <span id="generoProduto"></span>
+                    </p>
+                </div>
+
+                <button
+                    class="btn-comprar"
+                    onclick="alert('Produto selecionado! A funcionalidade de compra será implementada em uma próxima versão.')"
+                >
+                    Tenho interesse
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Uniduni</h2>
+            <p>Moda infantil com carinho, conforto e estilo.</p>
+
+            <div class="footer-links">
+                <a href="../index.html">Início</a>
+                <a href="login.html">Login</a>
+                <a href="cadastro.html">Cadastro</a>
+            </div>
+
+            <span class="footer-copy">
+                © 2026 Uniduni. Todos os direitos reservados.
+            </span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+</body>
+</html>

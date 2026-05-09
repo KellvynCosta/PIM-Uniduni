@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniduni</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+
+            <a href="index.html" class="logo-texto">
+                Uniduni
+            </a>
+
+            <div class="search-container">
+                <input
+                    type="text"
+                    id="barraPesquisa"
+                    placeholder="Buscar produtos..."
+                >
+            </div>
+
+            <div id="areaUsuario"></div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="carrossel">
+
+            <div class="carrossel-slide ativo">
+                <img src="./images/imagem-carrossel1.png" alt="Bebê usando roupa infantil">
+
+                <div class="carrossel-texto">
+                    <h2>Moda infantil para todos os momentos</h2>
+                    <p>Conforto, carinho e estilo para o dia a dia dos pequenos.</p>
+
+                    <button onclick="rolarParaProdutos()">
+                        Ver produtos
+                    </button>
+                </div>
+            </div>
+
+            <div class="carrossel-slide">
+                <img src="./images/imagem-carrossel2.png" alt="Produtos infantis organizados">
+
+                <div class="carrossel-texto">
+                    <h2>Conheça nossos produtos para bebês</h2>
+                    <p>Peças delicadas, confortáveis e pensadas para cada fase.</p>
+
+                    <button onclick="rolarParaProdutos()">
+                        Ver produtos
+                    </button>
+                </div>
+            </div>
+
+            <div class="carrossel-slide">
+                <img src="./images/imagem-carrossel3.png" alt="Roupas, calçados, acessórios e kits infantis">
+
+                <div class="carrossel-texto">
+                    <h2>Roupas, calçados, acessórios e kits</h2>
+                    <p>Tudo que seu bebê precisa em um só lugar.</p>
+
+                    <button onclick="rolarParaProdutos()">
+                        Ver produtos
+                    </button>
+                </div>
+            </div>
+
+            <button class="carrossel-controle anterior" onclick="mudarSlide(-1)">
+                &#10094;
+            </button>
+
+            <button class="carrossel-controle proximo" onclick="mudarSlide(1)">
+                &#10095;
+            </button>
+
+            <div class="carrossel-indicadores">
+                <button class="indicador ativo" onclick="irParaSlide(0)"></button>
+                <button class="indicador" onclick="irParaSlide(1)"></button>
+                <button class="indicador" onclick="irParaSlide(2)"></button>
+            </div>
+
+        </section>
+
+        <div class="container" id="produtos"></div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Uniduni</h2>
+            <p>Moda infantil com carinho, conforto e estilo.</p>
+
+            <div class="footer-links">
+                <a href="index.html">Início</a>
+                <a href="html/sobre.html">Sobre nós</a>
+                <a href="html/login.html">Login</a>
+                <a href="html/cadastro.html">Cadastro</a>
+            </div>
+
+            <span class="footer-copy">
+                © 2026 Uniduni. Todos os direitos reservados.
+            </span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+</body>
+</html>
