@@ -1168,16 +1168,30 @@ main {
 
 /* VLIBRAS */
 
-div[vw].enabled {
+body div[vw].enabled {
     position: fixed !important;
+    top: auto !important;
+    left: auto !important;
     right: 20px !important;
     bottom: 90px !important;
     z-index: 999999 !important;
+    transform: none !important;
+    margin: 0 !important;
 }
 
-div[vw-access-button].active {
+/* Força o botão do VLibras a respeitar o posicionamento */
+body div[vw-access-button].active,
+body div[vw].enabled div[vw-access-button].active {
+    position: fixed !important;
+    top: auto !important;
+    left: auto !important;
+    right: 20px !important;
+    bottom: 90px !important;
     width: 54px !important;
     height: 54px !important;
+    margin: 0 !important;
+    z-index: 999999 !important;
+
     background-image: url("../images/vlibras-icon.png") !important;
     background-size: cover !important;
     background-position: center !important;
@@ -1188,6 +1202,51 @@ div[vw-access-button].active {
     font-size: 0 !important;
 }
 
-div[vw-access-button].active img {
+body div[vw-access-button].active img,
+body div[vw].enabled div[vw-access-button].active img {
     display: none !important;
+}
+
+/* Tablets e telas médias */
+@media (max-width: 900px) {
+    body div[vw].enabled {
+        top: auto !important;
+        left: auto !important;
+        right: 18px !important;
+        bottom: 70px !important;
+        transform: none !important;
+    }
+
+    body div[vw-access-button].active,
+    body div[vw].enabled div[vw-access-button].active {
+        top: auto !important;
+        left: auto !important;
+        right: 18px !important;
+        bottom: 70px !important;
+        width: 48px !important;
+        height: 48px !important;
+    }
+}
+
+/* Celulares */
+@media (max-width: 520px) {
+    body div[vw].enabled {
+        top: auto !important;
+        left: auto !important;
+        right: 12px !important;
+        bottom: 22px !important;
+        transform: none !important;
+        transform-origin: bottom right !important;
+    }
+
+    body div[vw-access-button].active,
+    body div[vw].enabled div[vw-access-button].active {
+        top: auto !important;
+        left: auto !important;
+        right: 12px !important;
+        bottom: 22px !important;
+        width: 44px !important;
+        height: 44px !important;
+        border-radius: 12px !important;
+    }
 }

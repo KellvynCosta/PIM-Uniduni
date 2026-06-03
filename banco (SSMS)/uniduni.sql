@@ -16,18 +16,6 @@ CREATE TABLE Usuarios (
     TipoUsuario NVARCHAR(20)
 );
 
-CREATE TABLE Enderecos (
-    Id INT IDENTITY(1,1) PRIMARY KEY,
-    UsuarioId INT,
-    Rua NVARCHAR(100),
-    Numero NVARCHAR(10),
-    Bairro NVARCHAR(50),
-    Cidade NVARCHAR(50),
-    Estado NVARCHAR(50),
-    CEP NVARCHAR(10),
-    FOREIGN KEY (UsuarioId) REFERENCES Usuarios(Id)
-);
-
 CREATE TABLE Categorias (
     Id INT IDENTITY(1,1) PRIMARY KEY,
     Nome NVARCHAR(50),
@@ -47,57 +35,24 @@ CREATE TABLE Produtos (
     FOREIGN KEY (CategoriaId) REFERENCES Categorias(Id)
 );
 
-CREATE TABLE Carrinho (
-    Id INT IDENTITY(1,1) PRIMARY KEY,
-    UsuarioId INT,
-    Ativo BIT DEFAULT 1,
-    FOREIGN KEY (UsuarioId) REFERENCES Usuarios(Id)
-);
-
-CREATE TABLE CarrinhoItens (
-    Id INT IDENTITY(1,1) PRIMARY KEY,
-    CarrinhoId INT,
-    ProdutoId INT,
-    Quantidade INT,
-    FOREIGN KEY (CarrinhoId) REFERENCES Carrinho(Id),
-    FOREIGN KEY (ProdutoId) REFERENCES Produtos(Id)
-);
-
-CREATE TABLE Pedidos (
-    Id INT IDENTITY(1,1) PRIMARY KEY,
-    UsuarioId INT,
-    DataPedido DATETIME DEFAULT GETDATE(),
-    Status NVARCHAR(50),
-    Total DECIMAL(10,2),
-    FOREIGN KEY (UsuarioId) REFERENCES Usuarios(Id)
-);
-
-CREATE TABLE PedidoItens (
-    Id INT IDENTITY(1,1) PRIMARY KEY,
-    PedidoId INT,
-    ProdutoId INT,
-    Quantidade INT,
-    PrecoUnitario DECIMAL(10,2),
-    FOREIGN KEY (PedidoId) REFERENCES Pedidos(Id),
-    FOREIGN KEY (ProdutoId) REFERENCES Produtos(Id)
-);
-
-CREATE TABLE Pagamentos (
-    Id INT IDENTITY(1,1) PRIMARY KEY,
-    PedidoId INT,
-    Metodo NVARCHAR(50),
-    Status NVARCHAR(50),
-    Valor DECIMAL(10,2),
-    DataPagamento DATETIME DEFAULT GETDATE(),
-    FOREIGN KEY (PedidoId) REFERENCES Pedidos(Id)
-);
-
 INSERT INTO Categorias (Nome, Descricao)
 VALUES
-('Roupas', 'Roupas infantis para bebês')
+('Roupas', 'Roupas infantis para bebês'),
 ('Calçados', 'Calçados infantis para bebês'),
 ('Acessórios', 'Acessórios infantis para bebês'),
 ('Kits', 'Conjuntos e kits infantis para bebês');
+
+
+INSERT INTO Usuarios (Nome, Email, Senha, Telefone, TipoUsuario)
+VALUES
+('Admin', 'admin@email.com', 'admin', '11999999999', 'Admin');
+
+
+INSERT INTO Produtos (Nome, Descricao, Preco, Estoque, Tamanho, Genero, Imagem, CategoriaId)
+VALUES
+('Body Bebê Azul', 'Body confortável e macio', 44.90, 10, 'P', 'Masculino', 'body-azul.jpg', 1),
+('Camiseta Preta', 'Camiseta preta confortável para bebê', 79.90, 8, 'P', 'Unissex', 'camiseta-preta.jpg', 1),
+('Sapatinho Bebê Feminino', 'Sapatinho confortável para bebê', 59.90, 6, '18', 'Feminino', 'sapatilha-feminina-uniduni.png', 2);
 
 
 SELECT * FROM Categorias;

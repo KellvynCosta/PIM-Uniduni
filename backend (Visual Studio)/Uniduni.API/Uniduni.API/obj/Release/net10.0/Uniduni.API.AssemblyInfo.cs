@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Uniduni.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e93928790fa966a0ab7bcfadfca3dce2da0ef2ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("Uniduni.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Uniduni.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
