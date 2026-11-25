@@ -1,0 +1,64 @@
+UNIDUNI PIM IV — MODELO DE ENTIDADES E RELACIONAMENTOS
+
+O MER usa a notação Chen, semelhante ao modelo conceitual apresentado no
+PIM III: retângulos para entidades, elipses para atributos e losangos para
+relacionamentos. O ponto preenchido marca o atributo identificador.
+
+ORGANIZAÇÃO DO PDF
+Folha 1: visão atual, com 11 entidades, 14 relacionamentos e atributos principais.
+Folha 2: visão integral, com 17 entidades e 22 relacionamentos, incluindo o legado.
+Folha 3: atributos completos de catálogo e estoque.
+Folha 4: atributos completos de contas e compras.
+Folha 5: atributos completos das entidades legadas.
+Folha 6: dicionário dos relacionamentos e suas cardinalidades.
+
+O PDF é vetorial e permite ampliação sem perder nitidez. As imagens PNG
+em alta resolução e os SVGs permitem inserir os diagramas na documentação.
+O arquivo draw.io reúne as cinco folhas gráficas em páginas editáveis.
+
+ESCOPO DOS ATRIBUTOS
+Os 117 campos do banco são tratados em dois grupos: 95 atributos próprios
+das entidades e 22 referências estrangeiras, representadas por relacionamentos.
+O MER conceitual não repete essas referências como se fossem atributos comuns.
+Os tipos SQL, a nulabilidade e as PK/FK completas estão no modelo lógico
+entregue anteriormente e no dicionário CSV incluído neste pacote.
+
+CarrinhoItensLoja é uma entidade associativa cuja identificação resulta dos
+vínculos com o usuário e a variação. Não foi inventado um atributo Id para ela.
+
+REGRAS DE NEGÓCIO E ESTRUTURA FÍSICA
+O MER registra que um produto deve possuir categoria e que um pedido deve
+conter pelo menos um item. A coluna legada CategoriaId admite nulo no banco,
+mas a aplicação exige uma categoria válida; a existência de itens no pedido
+também é validada pela aplicação. Essas diferenças entre regra de negócio
+e restrição física são explicadas na última folha do PDF.
+
+R01 a R22 mantêm os identificadores dos vínculos usados no modelo lógico.
+Em PedidosLoja, comprador e responsável pela retirada são dois relacionamentos
+distintos com Usuarios. Os cruzamentos de linhas não representam junções.
+Os vínculos opcionais do histórico permitem registros automáticos do sistema.
+
+ENTIDADES LEGADAS
+Enderecos, Carrinho, CarrinhoItens, Pedidos, PedidoItens e Pagamentos foram
+identificados como legado. Seus registros não compõem o fluxo comercial
+atual da API; eles continuam representados na visão integral do banco.
+
+EDIÇÃO
+No diagrams.net, use Arquivo > Abrir de > Dispositivo e selecione
+Uniduni_MER_editavel.drawio. Entidades, atributos, losangos, conectores e
+legendas podem ser editados. Não é necessário instalar servidor MySQL.
+
+TEXTO PARA A DOCUMENTAÇÃO
+O Modelo de Entidades e Relacionamentos da UNIDUNI apresenta a evolução
+do domínio descrito no PIM III. As entidades de usuários, categorias e
+produtos foram mantidas e receberam novos relacionamentos para autenticação,
+variações, estoque e compras. As variações individualizam as combinações
+de cor e tamanho, enquanto os pedidos se associam aos itens adquiridos,
+às tentativas de pagamento simulado e aos eventos de acompanhamento.
+O usuário participa como comprador e, quando integrante da equipe, como
+responsável por operações de estoque e confirmação de retirada. As visões
+do modelo distinguem o núcleo atual das entidades legadas preservadas,
+e as cardinalidades expressam os vínculos obrigatórios e opcionais.
+
+Legenda sugerida: Modelo de Entidades e Relacionamentos da UNIDUNI.
+Fonte sugerida: Elaborado pelos autores (2026).

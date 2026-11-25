@@ -1,0 +1,67 @@
+UNIDUNI PIM IV — MODELO LÓGICO DO BANCO DE DADOS
+
+O modelo foi produzido a partir dos metadados do SQL Server do projeto,
+com apresentação inspirada no modelo lógico do PIM III: cabeçalhos cinza,
+caixas arredondadas, grade discreta, atributos, chaves e cardinalidades.
+
+CONTEÚDO DO PDF
+Página 1: visão do sistema atual, com 11 tabelas, 86 atributos e 14 FKs.
+Página 2: visão integral da base, com 17 tabelas, 117 atributos e 22 FKs.
+Página 3: identificação de todos os relacionamentos e observações de modelagem.
+
+O PDF é vetorial e permite ampliar sem perder nitidez. Os diagramas foram
+distribuídos em folhas grandes para preservar a leitura de todos os atributos.
+Para inserir na documentação, também estão disponíveis PNG em alta resolução
+e SVG vetorial. A visão atual costuma ser mais adequada à explicação do PIM IV;
+a visão integral registra também a estrutura legada preservada na base.
+
+EDIÇÃO
+Abra Uniduni_modelo_logico_editavel.drawio no diagrams.net pelo comando
+Arquivo > Abrir de > Dispositivo. Há duas páginas, uma para cada visão.
+Tabelas, cabeçalhos, atributos, marcações e conectores são objetos editáveis.
+Os conectores estão vinculados às tabelas; as referências R01 a R22 podem ser
+conferidas na terceira página do PDF ou em Relacionamentos.csv.
+
+CHAVES E OPCIONALIDADE
+PK = chave primária; FK = chave estrangeira; UQ = unicidade.
+Quando a unicidade contém vários campos, vale para a combinação inteira.
+CarrinhoItensLoja tem PK composta por UsuarioId e VariacaoId, ambos também FKs.
+O asterisco indica que a coluna aceita nulo no banco existente; a aplicação
+pode ter validação mais restritiva. Tipos e tamanhos originais estão no CSV.
+
+A cardinalidade junto a uma tabela indica sua participação na relação:
+(0,n) = pode associar-se a vários registros da outra tabela;
+(1,1) = deve associar-se exatamente a um registro da outra tabela;
+(0,1) = pode associar-se a um registro da outra tabela, mas o vínculo é opcional.
+As relações reproduzem as restrições da base, sem inventar FKs ou entidades.
+
+COMPATIBILIDADE COM O PIM III
+Usuarios, Categorias e Produtos permanecem na solução e foram ampliadas.
+As variações permitem estoque por cor e tamanho; sessões controlam autenticação;
+os novos carrinho, pedidos, itens, pagamentos e eventos atendem web e mobile.
+As tabelas legadas são Enderecos, Carrinho, CarrinhoItens, Pedidos, PedidoItens
+e Pagamentos. Elas aparecem na visão integral, com seus vínculos existentes.
+O modelo não converte o projeto para MySQL e não depende do MySQL Workbench.
+
+TEXTO PARA A DOCUMENTAÇÃO
+O modelo lógico da UNIDUNI representa a evolução da estrutura apresentada
+no PIM III, preservando os cadastros de usuários, categorias e produtos e
+acrescentando as entidades necessárias à autenticação, às variações, ao
+controle de estoque e ao fluxo comercial integrado entre web e mobile.
+O núcleo atual utiliza onze tabelas. A base completa mantém dezessete,
+considerando seis tabelas legadas preservadas por compatibilidade. As chaves
+primárias identificam os registros, enquanto as estrangeiras estabelecem
+os vínculos entre usuários, produtos, variações, pedidos e suas operações.
+Os itens do carrinho utilizam chave primária composta, e as restrições de
+unicidade evitam combinações e identificadores de operação duplicados.
+
+Legenda sugerida: Figura XX - Modelo lógico do banco de dados da UNIDUNI.
+Fonte sugerida: Elaborado pelos autores (2026).
+
+REVISÃO DAS LIGAÇÕES
+Os corredores das linhas paralelas foram afastados, os pontos de conexão
+nas tabelas foram distribuídos e os identificadores R01 a R22 aparecem nas
+duas extremidades de cada relação. O PDF e as imagens usam separação branca
+nos cruzamentos; o arquivo editável usa saltos de linha. Cruzamentos não
+representam junções: o vínculo existe entre as duas tabelas nas extremidades.
+Os textos são desenhados após os conectores para preservar sua leitura.

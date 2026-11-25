@@ -1,0 +1,98 @@
+{
+  "script_lines": 411,
+  "visual_lines": 548,
+  "parts": [
+    {
+      "file": "script_integral_01",
+      "first": 1,
+      "last": 34,
+      "rows": 38
+    },
+    {
+      "file": "script_integral_02",
+      "first": 35,
+      "last": 68,
+      "rows": 38
+    },
+    {
+      "file": "script_integral_03",
+      "first": 69,
+      "last": 100,
+      "rows": 38
+    },
+    {
+      "file": "script_integral_04",
+      "first": 100,
+      "last": 133,
+      "rows": 38
+    },
+    {
+      "file": "script_integral_05",
+      "first": 133,
+      "last": 166,
+      "rows": 38
+    },
+    {
+      "file": "script_integral_06",
+      "first": 167,
+      "last": 197,
+      "rows": 38
+    },
+    {
+      "file": "script_integral_07",
+      "first": 198,
+      "last": 223,
+      "rows": 38
+    },
+    {
+      "file": "script_integral_08",
+      "first": 223,
+      "last": 241,
+      "rows": 38
+    },
+    {
+      "file": "script_integral_09",
+      "first": 242,
+      "last": 261,
+      "rows": 38
+    },
+    {
+      "file": "script_integral_10",
+      "first": 261,
+      "last": 280,
+      "rows": 38
+    },
+    {
+      "file": "script_integral_11",
+      "first": 281,
+      "last": 307,
+      "rows": 38
+    },
+    {
+      "file": "script_integral_12",
+      "first": 308,
+      "last": 337,
+      "rows": 38
+    },
+    {
+      "file": "script_integral_13",
+      "first": 337,
+      "last": 366,
+      "rows": 38
+    },
+    {
+      "file": "script_integral_14",
+      "first": 367,
+      "last": 399,
+      "rows": 38
+    },
+    {
+      "file": "script_integral_15",
+      "first": 400,
+      "last": 411,
+      "rows": 16
+    }
+  ],
+  "sha256": "656208377603d315ad922808797fb8027871880112cfc24aa2a41086cefe63a7",
+  "normalization": "Acentos normalizados somente nas imagens; arquivo SQL original preservado."
+}

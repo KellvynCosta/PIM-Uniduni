@@ -1,0 +1,9 @@
+Conferência da entrega documental — 01/11/2026
+Word: 46 páginas renderizadas e conferidas visualmente.
+Script: 411 linhas originais cobertas por 15 imagens sequenciais.
+Legendas: A.1 a A.15 e B.1 a B.9 presentes no Word.
+SQL: arquivo idêntico à versão anterior, sem alteração de bytes.
+SHA-256 SQL: 656208377603d315ad922808797fb8027871880112cfc24aa2a41086cefe63a7
+Modelos editáveis reunidos: 22 recortes.
+Verificação: integridade dos arquivos e cobertura documental.
+Esta revisão não executou o script nem alterou o banco de dados.

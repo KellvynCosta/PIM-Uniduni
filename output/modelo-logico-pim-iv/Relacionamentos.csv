@@ -1,0 +1,23 @@
+﻿Referencia;Tabela;FK;Referencia tabela;Coluna alvo;FK aceita nulo;Uso
+R01;Carrinho;UsuarioId;Usuarios;Id;Sim;Legado
+R02;CarrinhoItens;CarrinhoId;Carrinho;Id;Sim;Legado
+R03;CarrinhoItens;ProdutoId;Produtos;Id;Sim;Legado
+R04;CarrinhoItensLoja;UsuarioId;Usuarios;Id;Não;Atual
+R05;CarrinhoItensLoja;VariacaoId;ProdutoVariacoes;Id;Não;Atual
+R06;Enderecos;UsuarioId;Usuarios;Id;Sim;Legado
+R07;EventosPedidoLoja;PedidoId;PedidosLoja;Id;Não;Atual
+R08;EventosPedidoLoja;UsuarioId;Usuarios;Id;Sim;Atual
+R09;ItensPedidoLoja;PedidoId;PedidosLoja;Id;Não;Atual
+R10;ItensPedidoLoja;VariacaoId;ProdutoVariacoes;Id;Não;Atual
+R11;MovimentacoesEstoque;VariacaoId;ProdutoVariacoes;Id;Não;Atual
+R12;MovimentacoesEstoque;UsuarioId;Usuarios;Id;Sim;Atual
+R13;Pagamentos;PedidoId;Pedidos;Id;Sim;Legado
+R14;PagamentosSimulados;PedidoId;PedidosLoja;Id;Não;Atual
+R15;PedidoItens;PedidoId;Pedidos;Id;Sim;Legado
+R16;PedidoItens;ProdutoId;Produtos;Id;Sim;Legado
+R17;Pedidos;UsuarioId;Usuarios;Id;Sim;Legado
+R18;PedidosLoja;UsuarioId;Usuarios;Id;Não;Atual
+R19;PedidosLoja;RetiradoPor;Usuarios;Id;Sim;Atual
+R20;ProdutoVariacoes;ProdutoId;Produtos;Id;Não;Atual
+R21;Produtos;CategoriaId;Categorias;Id;Sim;Atual
+R22;Sessoes;UsuarioId;Usuarios;Id;Não;Atual

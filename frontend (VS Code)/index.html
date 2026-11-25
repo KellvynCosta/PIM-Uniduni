@@ -1,126 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uniduni</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
-    <header class="header">
-        <div class="header-content">
-
-            <a href="index.html" class="logo-texto">
-                Uniduni
-            </a>
-
-            <div class="search-container">
-                <input
-                    type="text"
-                    id="barraPesquisa"
-                    placeholder="Buscar produtos..."
-                >
-            </div>
-
-            <div id="areaUsuario"></div>
-
-        </div>
-    </header>
-
-    <main>
-
-        <section class="carrossel">
-
-            <div class="carrossel-slide ativo">
-                <img src="./images/imagem-carrossel1.png" alt="Bebê usando roupa infantil">
-
-                <div class="carrossel-texto">
-                    <h2>Moda infantil para todos os momentos</h2>
-                    <p>Conforto, carinho e estilo para o dia a dia dos pequenos.</p>
-
-                    <button onclick="rolarParaProdutos()">
-                        Ver produtos
-                    </button>
-                </div>
-            </div>
-
-            <div class="carrossel-slide">
-                <img src="./images/imagem-carrossel2.png" alt="Produtos infantis organizados">
-
-                <div class="carrossel-texto">
-                    <h2>Conheça nossos produtos para bebês</h2>
-                    <p>Peças delicadas, confortáveis e pensadas para cada fase.</p>
-
-                    <button onclick="rolarParaProdutos()">
-                        Ver produtos
-                    </button>
-                </div>
-            </div>
-
-            <div class="carrossel-slide">
-                <img src="./images/imagem-carrossel3.png" alt="Roupas, calçados, acessórios e kits infantis">
-
-                <div class="carrossel-texto">
-                    <h2>Roupas, calçados, acessórios e kits</h2>
-                    <p>Tudo que seu bebê precisa em um só lugar.</p>
-
-                    <button onclick="rolarParaProdutos()">
-                        Ver produtos
-                    </button>
-                </div>
-            </div>
-
-            <button class="carrossel-controle anterior" onclick="mudarSlide(-1)">
-                &#10094;
-            </button>
-
-            <button class="carrossel-controle proximo" onclick="mudarSlide(1)">
-                &#10095;
-            </button>
-
-            <div class="carrossel-indicadores">
-                <button class="indicador ativo" onclick="irParaSlide(0)"></button>
-                <button class="indicador" onclick="irParaSlide(1)"></button>
-                <button class="indicador" onclick="irParaSlide(2)"></button>
-            </div>
-
-        </section>
-
-        <div class="container" id="produtos"></div>
-
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <h2>Uniduni</h2>
-            <p>Moda infantil com carinho, conforto e estilo.</p>
-
-            <div class="footer-links">
-                <a href="index.html">Início</a>
-                <a href="html/sobre.html">Sobre nós</a>
-                <a href="html/login.html">Login</a>
-                <a href="html/cadastro.html">Cadastro</a>
-            </div>
-
-            <span class="footer-copy">
-                © 2026 Uniduni. Todos os direitos reservados.
-            </span>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
-    </div>
-
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget("https://vlibras.gov.br/app");
-    </script>
-</body>
-</html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uniduni — pequenos começos, muito carinho</title><meta name="theme-color" content="#f78ac7"><meta name="description" content="Uniduni: roupas, calçados e acessórios para bebês, com carinho em cada escolha.">
+<link rel="icon" type="image/svg+xml" href="images/brand/uniduni-simbolo.svg"><link rel="preload" href="fonts/Nunito-Variable.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="css/styles.css?v=20261020-compras"><link rel="stylesheet" href="css/pages.css?v=20261020-compras"><link rel="stylesheet" href="css/catalogo.css?v=20261020-revisao"><link rel="stylesheet" href="css/compras.css?v=20261027-nomes"></head>
+<body class="pagina-inicio" data-pagina="inicio"><a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a><div class="faixa-carinho"><span><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L2.2 9.4l6.1-.9Z"/></svg> Para os primeiros capítulos da vida.</span><a href="html/sobre.html#retirada">Retirada na loja <svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg></a></div>
+<header class="site-header" id="siteHeader"><div class="header-content"><a class="marca " href="index.html" aria-label="Uniduni, página inicial"><img src="images/brand/uniduni-logo.svg" width="187" height="50" alt="Uniduni"></a>
+<nav class="navegacao" id="menuPrincipal" aria-label="Navegação principal"><a href="index.html#catalogoTitulo" aria-current="page">Catálogo</a><a href="html/sobre.html" >Nossa história</a><a href="html/sobre.html#retirada">Retirada</a></nav>
+<label class="search-container"><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input type="search" id="barraPesquisa" aria-label="Buscar produtos pelo nome ou descrição" placeholder="O que seu bebê precisa?"><kbd>/</kbd></label><div id="areaUsuario"></div><button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menuPrincipal" aria-expanded="false"><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h12M4 18h16"/></svg></button></div></header><main id="conteudo"><section class="hero" aria-labelledby="heroTitulo"><div class="hero-copy"><p class="hero-nota"><span></span> Uni duni tê. É pra você.</p><h1 id="heroTitulo">O começo de<br>tantas histórias.</h1><p class="hero-descricao">Roupas, calçados e pequenos detalhes para acompanhar cada nova fase do seu bebê.</p><div class="hero-acoes"><a class="botao-principal" href="#catalogoTitulo">Explorar o catálogo <span><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></span></a><a class="link-delicado" href="html/sobre.html">Conhecer a Uniduni</a></div><div class="hero-detalhes"><span><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 5.7c-2.7-3-6.4-1.8-8.5 1-2.1-2.8-5.8-4-8.5-1C-.2 10 5 15.4 12 21c7-5.6 12.2-11 8.5-15.3Z"/></svg> Para bebês</span><span><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg> Retirada na loja</span></div></div>
+<div class="hero-visual"><span class="hero-brilho brilho-um"><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L2.2 9.4l6.1-.9Z"/></svg></span><span class="hero-brilho brilho-dois"><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L2.2 9.4l6.1-.9Z"/></svg></span><div class="hero-foto carrossel" aria-roledescription="carrossel" aria-label="O universo Uniduni"><div class="carrossel-slide ativo"><img src="images/imagem-carrossel1.png" alt="Bebê sorrindo com roupa rosa, entre almofadas macias" fetchpriority="high"></div><div class="carrossel-slide retrato-natural" aria-hidden="true" inert><img src="images/bebe-negro-carrossel-amplo.png" alt="Bebê negro sorrindo com macacão turquesa, entre almofadas azuis e lilás" loading="lazy"></div><div class="carrossel-slide" aria-hidden="true" inert><img src="images/imagem-carrossel3.png" alt="Roupas e acessórios para pequenos começos" loading="lazy"></div><div class="hero-costura"></div></div><div class="hero-bilhete">Pequenos detalhes,<br><strong>muito carinho.</strong><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 5.7c-2.7-3-6.4-1.8-8.5 1-2.1-2.8-5.8-4-8.5-1C-.2 10 5 15.4 12 21c7-5.6 12.2-11 8.5-15.3Z"/></svg></div>
+<div class="carrossel-controles"><button type="button" data-slide="anterior" aria-label="Fotografia anterior">‹</button><div class="carrossel-indicadores"><button type="button" class="indicador ativo" data-indice="0" aria-label="Mostrar fotografia 1" aria-pressed="true"></button><button type="button" class="indicador" data-indice="1" aria-label="Mostrar fotografia 2" aria-pressed="false"></button><button type="button" class="indicador" data-indice="2" aria-label="Mostrar fotografia 3" aria-pressed="false"></button></div><span class="carrossel-contador" aria-live="off">1 / 3</span><button type="button" data-slide="proximo" aria-label="Próxima fotografia">›</button><button type="button" class="carrossel-pausa" aria-label="Pausar apresentação" aria-pressed="false">Ⅱ</button></div></div></section>
+<section class="atalhos-secao" aria-label="Categorias de produtos"><div class="atalhos-intro"><span class="fio-de-costura"></span><p>Um universo de fofuras</p></div><div id="atalhosCategorias" class="atalhos-categorias"></div></section>
+<section class="catalogo-secao" aria-labelledby="catalogoTitulo"><div class="catalogo-cabecalho"><div><h2 id="catalogoTitulo">Um carinho em cada escolha.</h2><p>Encontre a cor, o tamanho e a peça para o seu bebê.</p></div><div class="ordenacao"><label for="ordenarProdutos">Organizar por</label><select id="ordenarProdutos"><option value="nome">Nome (A–Z)</option><option value="menor">Menor preço</option><option value="maior">Maior preço</option></select></div></div>
+<details class="painel-filtros" open><summary><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/></svg> Filtrar produtos <span class="filtros-resumo">Do seu jeitinho</span></summary><div class="catalogo-filtros"><div><label for="filtroCategoria">Categoria</label><select id="filtroCategoria"><option value="">Todas as categorias</option></select></div><div><label for="filtroCor">Cor</label><select id="filtroCor"><option value="">Todas as cores</option></select></div><div><label for="filtroTamanho">Tamanho</label><select id="filtroTamanho"><option value="">Todos os tamanhos</option></select></div><label class="catalogo-checkbox"><input type="checkbox" id="filtroDisponivel"><span>Somente com estoque</span></label><button type="button" class="limpar-filtros" id="limparFiltros">Limpar filtros</button></div></details><p id="catalogoStatus" class="catalogo-aviso" role="status" aria-live="polite" tabindex="-1">Preparando as peças para você…</p><div class="container" id="produtos"></div></section>
+<section class="convite-historia"><img src="images/brand/uniduni-simbolo.svg" alt="" width="76" height="80"><div><h2>Uma brincadeira que virou carinho.</h2><p>Nosso nome vem da infância. Nosso olhar, de quem sabe que cada começo é especial.</p></div><a class="catalogo-secundario" href="html/sobre.html">Nossa história <svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a></section></main><footer class="site-footer"><div class="footer-grid"><div class="footer-marca"><a class="marca " href="index.html" aria-label="Uniduni, página inicial"><img src="images/brand/uniduni-logo.svg" width="187" height="50" alt="Uniduni"></a><p>Pequenos detalhes. Muito carinho.</p><span>Moda e descobertas para bebês.</span></div>
+<div><h2>Vem conhecer</h2><ul><li><a href="index.html#catalogoTitulo">Nosso catálogo</a></li><li><a href="html/sobre.html">A história da Uniduni</a></li><li><a href="html/login.html">Entrar na minha conta</a></li><li><a href="html/cadastro.html">Criar uma conta</a></li></ul></div>
+<div class="footer-retirada"><h2><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg> Retirada na loja</h2><p>Av. Yojiro Takaoka, 3500<br>Alphaville, Santana de Parnaíba – SP</p><p>Seg. a sex.: 9h às 18h<br>Sábado: 9h às 13h</p><a href="html/sobre.html#retirada">Informações de retirada <svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a></div></div>
+<div class="footer-fim"><span>© 2026 Uniduni. Feito para pequenos começos.</span><span>Loja fictícia para fins acadêmicos. Endereço de referência da faculdade.</span></div></footer><button class="voltar-topo" type="button" aria-label="Voltar ao início da página" hidden><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></button><div id="notificacoes" class="notificacoes" aria-live="polite" aria-atomic="false"></div>
+<dialog id="dialogoConfirmacao" class="dialogo"><div class="dialogo-simbolo"><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6m3 10v-3a6 6 0 0 0-3-5"/></svg></div><h2 id="dialogoTitulo">Confirmar ação</h2><p id="dialogoMensagem"></p><form method="dialog"><button class="catalogo-secundario" value="cancelar">Voltar</button><button class="catalogo-botao" value="confirmar">Confirmar</button></form></dialog>
+<div vw class="enabled"><div vw-access-button class="active"></div><div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div></div>
+<script src="js/api.js?v=20261020-compras"></script><script src="js/catalogo.js?v=20261020-compras"></script><script src="js/main.js?v=20261020-compras"></script><script src="js/ui.js?v=20261020-compras"></script>
+<script src="js/compras.js?v=20261027-retirada-2"></script>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script><script>if(window.VLibras&&!window.uniduniVLibras)window.uniduniVLibras=new window.VLibras.Widget('https://vlibras.gov.br/app');</script></body></html>

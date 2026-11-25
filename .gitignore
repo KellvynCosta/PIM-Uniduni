@@ -1,0 +1,9 @@
+**/bin/
+**/obj/
+**/.vs/
+tmp/
+*.user
+*.log
+**/.dart_tool/
+**/build/
+**/android/local.properties

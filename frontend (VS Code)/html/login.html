@@ -1,82 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Uniduni</title>
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
-
-    <main class="auth-container">
-        <section class="auth-card">
-            <h1>Login</h1>
-            <p>Entre na sua conta Uniduni</p>
-
-            <form id="formLogin">
-                <div class="form-group">
-                    <label for="emailLogin">E-mail</label>
-                    <input type="email" id="emailLogin" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="senhaLogin">Senha</label>
-                    <input type="password" id="senhaLogin" required>
-                </div>
-
-                <button type="submit">Entrar</button>
-            </form>
-
-            <p id="mensagemLogin"></p>
-
-            <p class="auth-link">
-                <button type="button" id="btnMostrarRedefinir" class="link-button">
-                    Esqueci minha senha
-                </button>
-            </p>
-
-            <form id="formRedefinirSenha" class="form-redefinir hidden">
-                <h2>Redefinir senha</h2>
-                <p>Informe seu e-mail e escolha uma nova senha.</p>
-
-                <div class="form-group">
-                    <label for="emailRedefinir">E-mail</label>
-                    <input type="email" id="emailRedefinir">
-                </div>
-
-                <div class="form-group">
-                    <label for="novaSenha">Nova senha</label>
-                    <input type="password" id="novaSenha">
-                </div>
-
-                <button type="submit">Redefinir senha</button>
-
-                <p id="mensagemRedefinir"></p>
-            </form>
-
-            <p class="auth-link">
-                Ainda não tem conta?
-                <a href="cadastro.html">Cadastrar</a>
-            </p>
-
-            <a class="voltar-home" href="../index.html">
-                Voltar para a página inicial
-            </a>
-        </section>
-    </main>
-
-    <script src="../js/main.js"></script>
-
-    <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-    </div>
-</div>
-
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget("https://vlibras.gov.br/app");
-    </script>
-</body>
-</html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrar — Uniduni</title><meta name="theme-color" content="#f78ac7"><meta name="description" content="Uniduni: roupas, calçados e acessórios para bebês, com carinho em cada escolha.">
+<link rel="icon" type="image/svg+xml" href="../images/brand/uniduni-simbolo.svg"><link rel="preload" href="../fonts/Nunito-Variable.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="../css/styles.css?v=20261020-compras"><link rel="stylesheet" href="../css/pages.css?v=20261020-compras"><link rel="stylesheet" href="../css/catalogo.css?v=20261020-revisao"><link rel="stylesheet" href="../css/compras.css?v=20261027-nomes"></head>
+<body class="pagina-login" data-pagina="login"><a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a><div class="faixa-carinho"><span><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L2.2 9.4l6.1-.9Z"/></svg> Para os primeiros capítulos da vida.</span><a href="../html/sobre.html#retirada">Retirada na loja <svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg></a></div>
+<header class="site-header" id="siteHeader"><div class="header-content"><a class="marca " href="../index.html" aria-label="Uniduni, página inicial"><img src="../images/brand/uniduni-logo.svg" width="187" height="50" alt="Uniduni"></a>
+<nav class="navegacao" id="menuPrincipal" aria-label="Navegação principal"><a href="../index.html#catalogoTitulo" >Catálogo</a><a href="../html/sobre.html" >Nossa história</a><a href="../html/sobre.html#retirada">Retirada</a></nav>
+<a class="busca-atalho" href="../index.html#catalogoTitulo"><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><span>Encontrar uma peça</span></a><div id="areaUsuario"></div><button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menuPrincipal" aria-expanded="false"><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h12M4 18h16"/></svg></button></div></header><main id="conteudo" class="auth-container"><section class="auth-cenario" aria-label="O universo Uniduni"><div class="auth-foto"><img src="../images/imagem-carrossel1.png" alt="Bebê sorrindo, entre almofadas macias"></div><div class="auth-frase"><img src="../images/brand/uniduni-simbolo.svg" alt="" width="70" height="74"><h2>Pequenos começos.<br>Grandes descobertas.</h2><p>Um universo de carinho espera por você.</p></div></section><section class="auth-card"><h1>Bom ter você por aqui.</h1><p class="auth-intro">Entre na sua conta e continue de onde parou.</p><form id="formLogin"><div class="form-group"><label for="emailLogin">E-mail</label><input type="email" id="emailLogin" required maxlength="100" autocomplete="username" placeholder="voce@exemplo.com"></div><div class="form-group"><label for="senhaLogin">Senha</label><input type="password" id="senhaLogin" autocomplete="current-password" required placeholder="Sua senha de acesso"></div><button class="botao-principal" type="submit">Entrar na minha conta</button></form><p id="mensagemLogin" class="auth-mensagem" role="status" aria-live="polite"></p><details class="auth-ajuda"><summary>Esqueci minha senha</summary><p>Solicite a recuperação de acesso ao administrador da loja.</p></details><p class="auth-link">Sua primeira visita? <a href="cadastro.html">Criar uma conta</a></p><a class="voltar-home" href="../index.html">Voltar para o catálogo</a></section></main><footer class="site-footer"><div class="footer-grid"><div class="footer-marca"><a class="marca " href="../index.html" aria-label="Uniduni, página inicial"><img src="../images/brand/uniduni-logo.svg" width="187" height="50" alt="Uniduni"></a><p>Pequenos detalhes. Muito carinho.</p><span>Moda e descobertas para bebês.</span></div>
+<div><h2>Vem conhecer</h2><ul><li><a href="../index.html#catalogoTitulo">Nosso catálogo</a></li><li><a href="../html/sobre.html">A história da Uniduni</a></li><li><a href="../html/login.html">Entrar na minha conta</a></li><li><a href="../html/cadastro.html">Criar uma conta</a></li></ul></div>
+<div class="footer-retirada"><h2><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg> Retirada na loja</h2><p>Av. Yojiro Takaoka, 3500<br>Alphaville, Santana de Parnaíba – SP</p><p>Seg. a sex.: 9h às 18h<br>Sábado: 9h às 13h</p><a href="../html/sobre.html#retirada">Informações de retirada <svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a></div></div>
+<div class="footer-fim"><span>© 2026 Uniduni. Feito para pequenos começos.</span><span>Loja fictícia para fins acadêmicos. Endereço de referência da faculdade.</span></div></footer><button class="voltar-topo" type="button" aria-label="Voltar ao início da página" hidden><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></button><div id="notificacoes" class="notificacoes" aria-live="polite" aria-atomic="false"></div>
+<dialog id="dialogoConfirmacao" class="dialogo"><div class="dialogo-simbolo"><svg class="icone " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6m3 10v-3a6 6 0 0 0-3-5"/></svg></div><h2 id="dialogoTitulo">Confirmar ação</h2><p id="dialogoMensagem"></p><form method="dialog"><button class="catalogo-secundario" value="cancelar">Voltar</button><button class="catalogo-botao" value="confirmar">Confirmar</button></form></dialog>
+<div vw class="enabled"><div vw-access-button class="active"></div><div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div></div>
+<script src="../js/api.js?v=20261020-compras"></script><script src="../js/catalogo.js?v=20261020-compras"></script><script src="../js/main.js?v=20261020-compras"></script><script src="../js/ui.js?v=20261020-compras"></script>
+<script src="../js/compras.js?v=20261027-retirada-2"></script>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script><script>if(window.VLibras&&!window.uniduniVLibras)window.uniduniVLibras=new window.VLibras.Widget('https://vlibras.gov.br/app');</script></body></html>
