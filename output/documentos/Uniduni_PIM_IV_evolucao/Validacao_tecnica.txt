@@ -1,0 +1,23 @@
+UNIDUNI PIM IV — VALIDAÇÃO DO MATERIAL REVISADO
+
+SQL Server
+Estrutura extraída por leitura de metadados da base existente, sem exportar dados de contas ou vendas.
+17 tabelas, 22 chaves estrangeiras, 24 chaves primárias/restrições de unicidade,
+13 CHECK, 5 índices adicionais, 1 procedure e 1 trigger.
+O script completo criou uma base independente de validação.
+As 203 verificações da suíte de integração da API passaram nessa base recriada.
+A execução repetida sobre um destino existente foi interrompida pela proteção do script.
+A base descartável foi removida após os testes. A base uniduni do grupo foi preservada.
+
+Flutter
+Análise estática final: No issues found.
+Suíte funcional: 22 testes aprovados.
+Captura documental: telas reais renderizadas em teste com dados de demonstração,
+sem modificar cadastros da base de trabalho. Teste de captura aprovado.
+O auxiliar de captura fica fora da suíte funcional padrão e não altera a aplicação distribuída.
+Não foi realizada nova instalação ou conferência física no Samsung nesta revisão.
+
+Word
+23 páginas e 21 figuras incorporadas, com revisão visual das páginas renderizadas.
+Formato e organização orientados pelo PDF do PIM III fornecido pelo grupo.
+Os diagramas também estão disponíveis em formato editável draw.io.

@@ -1,0 +1,25 @@
+UNIDUNI — IMPORTACAO DE MODELO NO MYSQL WORKBENCH 8.0
+
+O banco do sistema continua em SQL Server. Os arquivos desta pasta sao copias
+de estrutura para o modelador MySQL, sem contas, senhas ou registros comerciais.
+Nao representam uma migracao da aplicacao para MySQL.
+
+Uniduni_atual_11_tabelas_mysql.sql: fluxo atual da API web/mobile.
+Uniduni_completo_17_tabelas_mysql.sql: inclui as seis tabelas legadas preservadas.
+
+No Workbench 8.0, use File > Import > Reverse Engineer MySQL Create Script.
+Escolha um dos arquivos e mantenha a opcao de posicionar os objetos no diagrama.
+Esse processo importa um modelo local, sem precisar de servidor MySQL.
+Salve o modelo no formato MWB apos a importacao.
+
+As colunas, PK, FK, nulabilidade e restricoes de unicidade foram lidas dos
+metadados do banco SQL Server. Os tipos foram adaptados ao dialeto MySQL;
+as adaptacoes estao descritas no inicio dos arquivos. Os scripts nao convertem
+defaults, CHECKs, procedures, triggers ou o comportamento de ROWVERSION.
+Na documentacao do PIM, a tecnologia do banco deve permanecer SQL Server.
+Para tipos e objetos originais, use o SQL Server integral e o dicionario CSV
+em output/documentos/Uniduni_PIM_IV_evolucao.
+
+A versao instalada nesta verificacao possui uma interface diferente, na qual
+nao foi encontrado o editor EER nem a importacao de modelos no menu File.
+Os passos de importacao acima correspondem ao modelador do Workbench 8.0.

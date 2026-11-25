@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pXr5zBfcknY=",
+  "dgSpecHash": "JzERoDrt2is=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kellvyn\\Documents\\area-de-trabalho\\Faculdade\\PIM-Uniduni\\backend (Visual Studio)\\Uniduni.API\\Uniduni.API\\Uniduni.API.csproj",
+  "projectFilePath": "C:\\Users\\Kellvyn\\Documents\\Desktop\\Faculdade\\PIM-Uniduni\\backend (Visual Studio)\\Uniduni.API\\Uniduni.API\\Uniduni.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kellvyn\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\Kellvyn\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
@@ -35,7 +35,7 @@
     "C:\\Users\\Kellvyn\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.7.1\\microsoft.identitymodel.protocols.7.7.1.nupkg.sha512",
     "C:\\Users\\Kellvyn\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.7.1\\microsoft.identitymodel.protocols.openidconnect.7.7.1.nupkg.sha512",
     "C:\\Users\\Kellvyn\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.7.1\\microsoft.identitymodel.tokens.7.7.1.nupkg.sha512",
-    "C:\\Users\\Kellvyn\\.nuget\\packages\\microsoft.openapi\\2.4.1\\microsoft.openapi.2.4.1.nupkg.sha512",
+    "C:\\Users\\Kellvyn\\.nuget\\packages\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512",
     "C:\\Users\\Kellvyn\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Kellvyn\\.nuget\\packages\\microsoft.visualstudio.solutionpersistence\\1.0.52\\microsoft.visualstudio.solutionpersistence.1.0.52.nupkg.sha512",
     "C:\\Users\\Kellvyn\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
@@ -55,7 +55,7 @@
     "C:\\Users\\Kellvyn\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.4\\system.configuration.configurationmanager.9.0.4.nupkg.sha512",
     "C:\\Users\\Kellvyn\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.7.1\\system.identitymodel.tokens.jwt.7.7.1.nupkg.sha512",
     "C:\\Users\\Kellvyn\\.nuget\\packages\\system.memory.data\\8.0.1\\system.memory.data.8.0.1.nupkg.sha512",
-    "C:\\Users\\Kellvyn\\.nuget\\packages\\system.security.cryptography.pkcs\\9.0.4\\system.security.cryptography.pkcs.9.0.4.nupkg.sha512",
+    "C:\\Users\\Kellvyn\\.nuget\\packages\\system.security.cryptography.pkcs\\9.0.21\\system.security.cryptography.pkcs.9.0.21.nupkg.sha512",
     "C:\\Users\\Kellvyn\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.4\\system.security.cryptography.protecteddata.9.0.4.nupkg.sha512"
   ],
   "logs": []
